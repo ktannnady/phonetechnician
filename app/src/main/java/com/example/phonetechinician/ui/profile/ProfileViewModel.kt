@@ -1,13 +1,13 @@
-package com.example.phonetechinician.ui.notifications
+package com.example.phonetechinician.ui.profile
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class ProfileViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is Profile Fragment"
     }
     val text: LiveData<String> = _text
 }
