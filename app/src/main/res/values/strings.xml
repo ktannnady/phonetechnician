@@ -6,4 +6,9 @@
     <string name="title_search"> Search </string>
     <string name="title_profile">Profile</string>
     <string name="title_settings">Settings</string>
+    <string name="jalan_merdeka">Jalan Merdeka</string>
+    <string name="samsung_galaxy_s10">Samsung Galaxy S10</string>
+    <string name="hai_kevin_tannady">Hai, Kevin Tannady</string>
+    <string name="hallo_apakah_ada_kendala_pada_smartphone_kamu">Hallo! Apakah ada kendala pada smartphone kamu?</string>
+    <string name="pastikan_kamu_selalu_melakukan_pengecekan_berkala_pada_smartphone_kamu_ya">Pastikan kamu selalu melakukan pengecekan berkala pada smartphone kamu ya!</string>
 </resources>
