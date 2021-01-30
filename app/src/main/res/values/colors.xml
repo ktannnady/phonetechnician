@@ -6,4 +6,6 @@
     <color name="colorFragment">#D8F3DC</color>
     <color name="colorSelectedFragment">#2D6A4F</color>
     <color name="colorCardBg">#B7E4C7</color>
+    <color name="colorLine">#52B788</color>
+    <color name="colorStar">#ffff00</color>
 </resources>

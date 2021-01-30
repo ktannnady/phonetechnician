@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileTeknisi"
+    android:background="@color/colorPrimary"
+    android:id="@+id/primaryLayout"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/technician_10"/>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            card_view:cardBackgroundColor="@color/colorFragment"
+            card_view:cardCornerRadius="6dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTechnicianIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hello, nama saya Teknisi 1!"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTechnicianDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="@string/deskripsi"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginVertical="5dp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Teknisi"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"/>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            card_view:cardBackgroundColor="@color/colorFragment"
+            card_view:cardCornerRadius="6dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTechnicianAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:text="Jl. ABC no 23, Sumatera Utara, 20333, Medan."
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="10">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="No Hp"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                card_view:cardBackgroundColor="@color/colorFragment"
+                card_view:cardCornerRadius="6dp"
+                android:layout_marginLeft="5dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTechnicianPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+62123456789"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="10">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="Email"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"/>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                card_view:cardBackgroundColor="@color/colorFragment"
+                card_view:cardCornerRadius="6dp"
+                android:layout_marginLeft="5dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTechnicianEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="teknisi1@teknisi.com"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            card_view:cardBackgroundColor="@color/colorFragment"
+            card_view:cardCornerRadius="6dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/btnChat">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_chat_24"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kirim Pesan"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

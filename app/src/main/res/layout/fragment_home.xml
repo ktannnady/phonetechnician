@@ -7,140 +7,576 @@
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <androidx.cardview.widget.CardView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="101dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
-        app:cardElevation="0dp">
-
+        android:layout_height="match_parent">
+        
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimary"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/ivUserDisplayPicture"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/profile_1" />
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/activity_vertical_margin"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvUserName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hai_kevin_tannady"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvUserPhone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/samsung_galaxy_s10"
-                    android:textSize="13dp" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="101dp"
+                android:layout_weight="30"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:cardElevation="0dp">
 
-                <TextView
-                    android:id="@+id/tvGpsName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/jalan_merdeka"
-                    android:layout_marginRight="7dp"
-                    android:textSize="13dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/ivGpsIcon"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/ivGpsIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:src="@drawable/gps_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        card_view:cardBackgroundColor="@color/colorCardBg"
-        card_view:cardCornerRadius="6dp">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="101dp"
-            android:orientation="horizontal">
-            
-            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="260dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="13dp"
-                android:layout_marginLeft="14dp"
-                card_view:cardCornerRadius="6dp"
-                card_view:cardBackgroundColor="@color/colorFragment">
-                
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/tv1Card2"
+                    <ImageView
+                        android:id="@+id/ivUserDisplayPicture"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/hallo_apakah_ada_kendala_pada_smartphone_kamu"
-                        android:textSize="11dp"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginLeft="7dp"
-                        android:textStyle="bold" />
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/profile_1" />
 
-                    <TextView
-                        android:id="@+id/tv2Card2"
+                    <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:layout_marginLeft="7dp"
-                        android:text="@string/pastikan_kamu_selalu_melakukan_pengecekan_berkala_pada_smartphone_kamu_ya"
-                        android:textSize="11dp" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:padding="3dp"
+                            android:text="@string/hai_kevin_tannady"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvUserPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100"
+                            android:padding="3dp"
+                            android:text="@string/samsung_galaxy_s10"
+                            android:textSize="13dp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvGpsName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/jalan_merdeka"
+                            android:layout_marginRight="7dp"
+                            android:textSize="13dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/ivGpsIcon"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivGpsIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/gps_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                card_view:cardBackgroundColor="@color/colorCardBg"
+                card_view:cardCornerRadius="6dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginLeft="14dp"
+                        card_view:cardCornerRadius="6dp"
+                        card_view:cardBackgroundColor="@color/colorFragment">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv1Card2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:text="@string/hallo_apakah_ada_kendala_pada_smartphone_kamu"
+                                android:textSize="11dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv2Card2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginRight="7dp"
+                                android:text="@string/pastikan_kamu_selalu_melakukan_pengecekan_berkala_pada_smartphone_kamu_ya"
+                                android:textSize="11dp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/repairing_1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_weight="40"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/colorCardBg"
+                app:cardCornerRadius="6dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="ExtraText">
+
+                    <TextView
+                        android:id="@+id/tv1Card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Teknisi terbaik di kota Anda"
+                        android:textStyle="bold"
+                        android:textSize="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorLine"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/teknisiTerbaik1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="33"
+                            android:orientation="vertical"
+                            android:clickable="true"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivTechnician1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/technician_1" />
+
+                            <TextView
+                                android:id="@+id/tvTechnicianName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Budi Murni"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTechnicianStar1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icons8_star_filled_32_1" />
+
+                                <TextView
+                                    android:id="@+id/tvTechnicianStar1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.9/5"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"
+                                    android:gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/teknisiTerbaik2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="33"
+                            android:orientation="vertical"
+                            android:layout_marginRight="55dp"
+                            android:clickable="true"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivTechnician2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/technician_1" />
+
+                            <TextView
+                                android:id="@+id/tvTechnicianName2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Kevin M"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTechnicianStar2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icons8_star_filled_32_1" />
+
+                                <TextView
+                                    android:id="@+id/tvTechnicianStar2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.9/5"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"
+                                    android:gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/teknisiTerbaik3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="33"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivTechnician3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/technician_1" />
+
+                            <TextView
+                                android:id="@+id/tvTechnicianName3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Mamar"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTechnicianStar3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icons8_star_filled_32_1" />
+
+                                <TextView
+                                    android:id="@+id/tvTechnicianStar3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.9/5"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"
+                                    android:gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:id="@+id/tvTechnicianTerbaik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Lainnya >>"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:layout_gravity="right"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:id="@+id/tv3Card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Teknisi di dekat Anda"
+                        android:textStyle="bold"
+                        android:textSize="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/colorLine"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/teknisiTerdekat1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="33"
+                            android:clickable="true"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivTechnicianNearby1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/technician_1" />
+
+                            <TextView
+                                android:id="@+id/tvTechnicianNearbyName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Sang Bu.."
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTechnicianStarNearby1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icons8_star_filled_32_1" />
+
+                                <TextView
+                                    android:id="@+id/tvTechnicianStarNearby1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.9/5"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"
+                                    android:gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/teknisiTerdekat2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="33"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivTechnicianNearby2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/technician_1" />
+
+                            <TextView
+                                android:id="@+id/tvTechnicianNameNearby2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="JBL"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTechnicianStarNearby2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icons8_star_filled_32_1" />
+
+                                <TextView
+                                    android:id="@+id/tvTechnicianStarNearby2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.9/5"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"
+                                    android:gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/teknisiTerdekat3"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="33"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:clickable="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivTechnicianNearby3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/technician_1" />
+
+                            <TextView
+                                android:id="@+id/tvTechnicianNameNearby3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Parusuh"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp" />
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTechnicianNearbyStar3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/icons8_star_filled_32_1" />
+
+                                <TextView
+                                    android:id="@+id/tvTechnicianNearbyStar3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="4.9/5"
+                                    android:textStyle="bold"
+                                    android:textSize="10dp"
+                                    android:gravity="center"/>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:id="@+id/tvTechnicianTerdekat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/lainnya"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_gravity="right"
+                        android:clickable="true"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
             </androidx.cardview.widget.CardView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-    </androidx.cardview.widget.CardView>
-
-
+    </ScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>
