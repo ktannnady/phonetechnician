@@ -14,4 +14,5 @@
     <string name="lainnya"><![CDATA[Lainnya >>]]></string>
     <string name="deskripsi">Jika kamu memerlukan bantuan saya, bisa hubungi saya secara langsung!, untuk pengalaman, dan kemampuan saya, serta alamat. Kamu dapat melihatnya dibawah sini! Semoga membantu!</string>
     <string name="feedback">Terima kasih telah menggunakan jasa saya! Alangkah baiknya jika kamu memberikan rating yang sesuai dengan kinerja saya! Dan juga sertakan feedback jika perlu! Terima Kasih!</string>
+    <string name="hyperlink_email">Email\n<a href="abc@gmail.com">abc@gmail.com</a></string>
 </resources>

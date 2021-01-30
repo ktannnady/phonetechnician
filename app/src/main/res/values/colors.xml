@@ -8,4 +8,6 @@
     <color name="colorCardBg">#B7E4C7</color>
     <color name="colorLine">#52B788</color>
     <color name="colorStar">#ffff00</color>
+    <color name="colorHelpButton">#52B788</color>
+    <color name="colorBackgroundChat">#808080</color>
 </resources>

@@ -6,18 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment">
 
-    <TextView
-        android:id="@+id/text_profile"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:gravity="top"
+        >
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/text_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_profile2"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:background="@drawable/background_rectangle"
+            android:text="Nama\nKevin Tannady"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_profile3"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:background="@drawable/background_rectangle"
+            android:text="Jenis Smartphone\nAndroid"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/text_profile4"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:background="@drawable/background_rectangle"
+            android:text="Merk Smartphone\nSamsung Galaxy S10"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/text_profile5"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:background="@drawable/background_rectangle"
+            android:text="No.Handphone\n+6282162174366"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/text_profile6"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:background="@drawable/background_rectangle"
+            android:text="@string/hyperlink_email"
+            android:textSize="16sp"
+            android:autoLink="email"
+            />
+
+        <TextView
+            android:id="@+id/text_profile7"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:background="@drawable/background_rectangle"
+            android:text="Saat ini anda tidak terdaftar sebagai teknisi"
+            android:textSize="16sp"
+            android:autoLink="email"/>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+            <TextView
+                android:id="@+id/ubah_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubah Profile >>>"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:clickable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Sebagai Teknisi >>>"
+                android:layout_weight="1"
+                android:textSize="16sp"
+
+                />
+
+
+        </LinearLayout>
+
+        />
+
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
